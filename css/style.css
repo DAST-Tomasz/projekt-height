@@ -1,0 +1,289 @@
+/* style generalne - start */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    font-size: 2.8em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Droid Serif', serif;
+}
+
+h3 {
+    font-family: 'Droid Serif', serif;
+    font-size: 1em;
+    padding-bottom: 40px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#services, #about, #contact {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* style generalne - stop */
+
+
+/* nawigacja - start */
+
+#main-nav {
+    position: fixed;
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#main-nav .navbar-brand {
+    color: #fff;
+    font-family: 'Droid Serif', serif;
+    transition: all .5s;
+}
+
+#main-nav .navbar-brand:hover {
+    color: #0ed8d6;
+}
+
+#main-nav #menu-glowne .menu-add {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    transition: all .5s;
+}
+
+#main-nav #menu-glowne .menu-add:hover {
+    color: #0ed8d6;
+}
+
+
+/* nawigacja - stop */
+
+
+/* header slider - start */
+
+#carousel-example-generic .carousel-inner .item {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header/pictures_on_the_wall.jpg);
+    position: relative;
+}
+
+#carousel-example-generic .carousel-inner .item .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.carousel-caption .btn-default {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-color: #0ed8d6;
+    transition: all .5s;
+}
+
+.carousel-caption .btn-default:hover {
+    color: #0ed8d6;
+    background-color: #fff;
+}
+
+
+/* header slider - stop */
+
+
+/* sekcja services - start */
+
+#services {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+}
+
+#services .container .row .fa {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    border-radius: 80px;
+    transition: all .5s;
+}
+
+#services .container .row .fa:hover {
+    color: #0ed8d6;
+    background-color: #fff;
+    transform: rotate(360deg);
+}
+
+#services .container .row .title,
+.txt {
+    padding-top: 20px;
+}
+
+#services .container .row .txt {
+    font-size: 0.8em;
+}
+
+
+/* sekcja services - stop */
+
+
+/* sekcja portfolio - start */
+
+#portfolio {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.portfolio-items {
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+#portfolio .container .row .txt {
+    font-size: 0.9em;
+    padding-top: 0;
+}
+
+#portfolio .container .row .portfolio-items .portfolio-img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+#portfolio .container .row .portfolio-items .portfolio-img .portfolio-mask {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(14, 216, 214, 1);
+    position: relative;
+    transition: all .5s;
+}
+
+#portfolio .container .row .portfolio-items .portfolio-img .portfolio-mask:hover {
+    opacity: 0.65;
+}
+
+#portfolio .container .row .portfolio-items .portfolio-img .img-background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: all .5s;
+}
+
+#portfolio .container .row .portfolio-items .portfolio-img .img-background:hover {
+    transform: scale(1.1);
+}
+
+#portfolio .container .row .portfolio-items .portfolio-img .portfolio-mask .fa {
+    color: #fff;
+    font-size: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+#image1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#image2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#image3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#image4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#image5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#image6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+
+/* sekcja portfolio - stop */
+
+
+/* sekcja about - start */
+
+#about {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#about .container .row .txt {
+    font-size: 0.9em;
+    padding-top: 0;
+}
+
+#about .container .row .img-team {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 20px;
+}
+
+#about .container .row .icon-team {
+    width: 100%;
+}
+
+#about .container .row .fa {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: #000;
+    margin: 10px;
+    transition: all .5s;
+}
+
+#about .container .row .fa:hover {
+    background-color: #0ed8d6;
+}
+
+/* sekcja about - stop */
+
+/* sekcja contact - start */
+
+#contact {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* sekcja contact - stop */
