@@ -1,3 +1,5 @@
+/* Transparent scroll menu - stop */
+
 $(function () {
     var okno = $(window);
     var menu = $('#main-nav');
@@ -26,7 +28,7 @@ $(function () {
         
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top - menuHeight
-        }, 500);
+        }, 300);
     });
 
     /* Smoth scroll - stop */

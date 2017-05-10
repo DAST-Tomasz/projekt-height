@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt - super hiper strona</title>
+    <title>Projekt - portfolio</title>
 
     <!-- font awsome - start -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- font awsome - stop -->
 
     <!-- font google - start -->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Montserrat:600,600|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Montserrat:600" rel="stylesheet">
     <!-- font google - stop -->
 
     <!-- bootstrap - start -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" 1>
     <!-- bootstrap - start -->
 
-    <!-- main style - start -->
+    <!-- main style, rwd - start -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- main style - stop -->
-
-    <!-- style reposnsywne - start -->
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- style reposnsywne - stop -->
+    <!-- main style, rwd - stop -->
+
 </head>
 
 <body>
-    <!-- sekcja nawigacji - start -->
+    <!-- section - navigation - start -->
     <nav id="main-nav" class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand" href="#">Bootstrap Project</a>
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-glowne" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -43,7 +43,7 @@
 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="menu-glowne">
+            <div id="main-menu" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="menu-item"><a href="#main-header" class="menu-add">Home</a></li>
                     <li class="menu-item"><a href="#services" class="menu-add">Services</a></li>
@@ -57,47 +57,55 @@
         <!-- /.navbar-collapse -->
         <!-- /.container-fluid -->
     </nav>
-    <!-- sekcja nawigacji - stop -->
+    <!-- section - navigation - stop -->
 
-    <!-- slider header - start -->
+    <!-- slider - header - start -->
     <header id="main-header">
-        <div id="carousel-example-generic" class="carousel slide text-center" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <!--<img src="img/header/pictures_on_the_wall.jpg" alt="">-->
+                    <img src="img/header/pictures_on_the_wall.jpg" alt="slide 1">
                     <div class="carousel-caption">
-                        <h2>Num Libero temporte</h2>
-                        <h1>Lorem Ipsum Dolor</h1>
-                        <a href="#services" class="btn btn-default btn-lg">view more</a>
+                        <h2>Slider 1</h2>
+                        <p class="slider-title">Lorem Ipsum Dolor</p>
+                        <a href="#services" class="btn">view more</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/header/workstation-336369_1920.jpg" alt="slide 2">
+                    <div class="carousel-caption">
+                        <h2>Slider 2</h2>
+                        <p class="slider-title">Lorem Ipsum Dolor</p>
+                        <a href="#services" class="btn">view more</a>
                     </div>
                 </div>
             </div>
+
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#services" role="button" data-slide="next">
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
     </header>
-    <!-- slider header - stop -->
+    <!-- slider - header - stop -->
 
-    <!-- section services - start -->
+    <!-- section - services - start -->
     <section id="services">
         <div class="container">
             <div class="row">
-                <h1 class="section-title">services</h1>
+                <p class="section-title">services</p>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
             </div>
             <div class="row">
@@ -119,13 +127,13 @@
             </div>
         </div>
     </section>
-    <!-- section services - stop -->
+    <!-- section - services - stop -->
 
-    <!-- section portfolio - start -->
+    <!-- section - portfolio - start -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <h1 class="section-title">Portfolio</h1>
+                <p class="section-title">Portfolio</p>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
             </div>
             <div class="row">
@@ -134,7 +142,9 @@
                         <div class="portfolio-img">
                             <div id="image1" class="img-background">
                                 <div class="portfolio-mask">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <div class="icon-plus">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +157,9 @@
                         <div class="portfolio-img">
                             <div id="image2" class="img-background">
                                 <div class="portfolio-mask">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <div class="icon-plus">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +172,9 @@
                         <div class="portfolio-img">
                             <div id="image3" class="img-background">
                                 <div class="portfolio-mask">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <div class="icon-plus">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +189,9 @@
                         <div class="portfolio-img">
                             <div id="image4" class="img-background">
                                 <div class="portfolio-mask">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <div class="icon-plus">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +204,9 @@
                         <div class="portfolio-img">
                             <div id="image5" class="img-background">
                                 <div class="portfolio-mask">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <div class="icon-plus">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +219,9 @@
                         <div class="portfolio-img">
                             <div id="image6" class="img-background">
                                 <div class="portfolio-mask">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <div class="icon-plus">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -213,85 +233,99 @@
         </div>
     </section>
 
-    <!-- section portfolio - stop -->
+    <!-- section - portfolio - stop -->
 
-    <!-- section about - start -->
+    <!-- section - about - start -->
     <section id="about">
         <div class="container">
             <div class="row">
-                <h1 class="section-title">Meet our team</h1>
+                <p class="section-title">Meet our team</p>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <img src="img/team/man-1.jpg" class="img-team img-circle" />
+                <div class="col-xs-12 col-md-4 down">
+                    <img src="img/team/man-1.jpg" alt="pracownik 1" class="img-team img-circle" />
                     <p class="title">Eric Stern</p>
                     <p class="txt">Account Manager</p>
-                    <div cass="icon-team">
                     <a href="#"><i class="fa fa-facebook img-circle" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter img-circle" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin img-circle" aria-hidden="true"></i>
-                        </div></a>
+                    <a href="#"><i class="fa fa-linkedin img-circle" aria-hidden="true"></i></a>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="img/team/man-2.jpg" class="img-team img-circle" />
+                <div class="col-xs-12 col-md-4 down">
+                    <img src="img/team/man-2.jpg" alt="pracownik 2" class="img-team img-circle" />
                     <p class="title">Martin Muller</p>
                     <p class="txt">Developer</p>
                     <a href="#"><i class="fa fa-facebook img-circle" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter img-circle" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-linkedin img-circle" aria-hidden="true"></i></a>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="img/team/woman-1.jpg" class="img-team img-circle" />
+                <div class="col-xs-12 col-md-4 down">
+                    <img src="img/team/woman-1.jpg" alt="pracownik 3" class="img-team img-circle" />
                     <p class="title">Anna Smith</p>
                     <p class="txt">Project Manager</p>
                     <a href="#"><i class="fa fa-facebook img-circle" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter img-circle" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-linkedin img-circle" aria-hidden="true"></i></a>
                 </div>
+                <div class="col-xs-12 col-md-12">
+                    <p class="team-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores a praesentium ipsa perspiciatis quaerat qui ut eos, ad dicta maiores laboriosam illo distinctio temporibus aliquam nesciunt officia, natus eligendi corrupti?</p>
+                </div>
             </div>
         </div>
     </section>
-    <!-- section about - stop -->
-    
-    <!-- section contact - start -->
+    <!-- section - about - stop -->
+
+    <!-- section - contact - start -->
     <section id="contact">
         <div class="container">
             <div class="row">
-                <h1 class="section-title">Meet our team</h1>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                <p class="section-title">Contact Us</p>
+                <h3 class="contact-subtitle">Lorem ipsum dolor sit amet.</h3>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <img src="img/team/man-1.jpg" class="img-team img-circle" />
-                    <p class="title">Eric Stern</p>
-                    <p class="txt">Account Manager</p>
-                    <div cass="icon-team">
-                    <a href="#"><i class="fa fa-facebook img-circle" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter img-circle" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin img-circle" aria-hidden="true"></i>
-                        </div></a>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="img/team/man-2.jpg" class="img-team img-circle" />
-                    <p class="title">Martin Muller</p>
-                    <p class="txt">Developer</p>
-                    <a href="#"><i class="fa fa-facebook img-circle" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter img-circle" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin img-circle" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="img/team/woman-1.jpg" class="img-team img-circle" />
-                    <p class="title">Anna Smith</p>
-                    <p class="txt">Project Manager</p>
-                    <a href="#"><i class="fa fa-facebook img-circle" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter img-circle" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin img-circle" aria-hidden="true"></i></a>
-                </div>
+                <form action="https://formspree.io/your@email.com" method="POST">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-right">
+                            <input id="usr" class="form-control" type="text" placeholder="Your Name*" />
+                            <input id="email" class="form-control" type="text" name="_replyto" placeholder="Your E-mail*" />
+                            <input id="phone" class="form-control" type="text" placeholder="Your Phone*" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <textarea id="comment" class="form-control" placeholder="Your message*"></textarea>
+                    </div>
+                    <div class="col-xs-12 col-md-12">
+                        <input type="submit" value="Send" class="btn">
+                    </div>
+
+                </form>
             </div>
         </div>
     </section>
-    <!-- section contact - stop -->
+    <!-- section - contact - stop -->
+
+    <!-- section - footer - start -->
+    <footer id="tootsy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <p class="copyright">Copyright@Your Website</p>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <a href="#"><i class="fa fa-facebook img-circle" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter img-circle" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin img-circle" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <p class="copyright">
+                        <a class="link" href="#main-header">Privacy Policy</a>&nbsp;&nbsp;&nbsp;
+                        <a class="link" href="#main-header">Terms of Use</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- section - footer - stop -->
 
     <!-- jquery - start -->
     <script src="js/jquery-3.2.0.min.js"></script>
@@ -300,9 +334,9 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- skrypt js - start -->
+    <!-- script js - start -->
     <script src="js/main.js"></script>
-    <!-- skrypt js - start -->
+    <!-- script js - start -->
 </body>
 
 </html>

@@ -14,11 +14,49 @@
     .navbar {
         border-radius: 0;
     }
-    
     #contact h2,
     address,
     .social-icons {
         text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+     header {
+        display: none;
+    }
+    
+    #contact .container .row #comment {
+        float: none;
+    }
+    
+    #about .container .row .down {
+        padding-bottom: 30px;
+    }
+   
+    #main-nav .container-fluid .navbar-brand {
+        color: #333;
+    }
+    
+    #main-nav.scroll .container-fluid .navbar-brand {
+        color: #fff;
+    }
+    
+    #main-nav .container-fluid #main-menu .menu-add {
+        color: #333;
+    }
+    
+    #main-nav.scroll .container-fluid #main-menu .menu-add {
+        color: #fff;
+    }
+    
+    #main-nav .container-fluid #main-menu ul > :first-child {
+        display: none;
+    }
+    
+    .form-control {
+        width: 100%;
+        float: none;
     }
 }
 
@@ -27,14 +65,45 @@
         border-radius: 0;
     }
     #main-nav {
-        border: none;
+        border: 0;
+        background-color: #0ed8d6;
+    }
+    
+    #main-nav .container-fluid .navbar-brand {
+        color: #fff;
+    }
+    
+    #main-nav .container-fluid .navbar-brand:hover {
+        color: #333;
+    }
+    
+    #main-nav .container-fluid #main-menu .menu-add {
+        color: #fff;
+    }
+    
+     #main-nav .container-fluid #main-menu .menu-add:hover {
+        color: #333;
+    }
+    
+    #main-nav.scroll .container-fluid #main-menu .menu-add:hover {
+        color: #333;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
         background-color: #fff;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #fff;
+        transition: all .5s;
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: #0f0f0f;
     }
     #main-nav ul .menu-item {
         display: block;
         padding: 5px;
         border: none;
-        background-color: #fff;
+        background-color: #0ed8d6;
     }
     #main-nav ul .menu-item a {
         color: #1ac056;
@@ -48,7 +117,6 @@
     #main-nav #drop:checked + ul {
         display: block;
     }
-    
     #about figure .about-img {
         width: 100%;
         max-height: none;
@@ -68,18 +136,16 @@
     }
 }
 
-@media (min-width: 768px) .navbar {
+@media (min-width: 768px) {
+    .navbar {
     border-radius: 0;
+    }
 }
 
 @media (max-width: 480px) {
-    #main-header .header-caption h1 {
-        font-size: 3em;
+    
+    #main-nav .container-fluid .navbar-brand {
+        margin-left: 0;
     }
-    #main-header .header-caption h2 {
-        font-size: 2em;
-    }
-    #portfolio {
-        padding: 0;
-    }
+    
 }
